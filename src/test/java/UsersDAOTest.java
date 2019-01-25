@@ -4,6 +4,7 @@
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import javax.persistence.EntityManager;
@@ -55,7 +56,7 @@ public class UsersDAOTest {
     }
 
     @Test
-   // @Ignore
+    @Ignore
     public void refreshRemoved() {
         em.getTransaction().begin();
         Engineer engineer = dao.createEngineer("engineer1");
