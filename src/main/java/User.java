@@ -4,8 +4,6 @@
 
 import javax.persistence.*;
 
-//import static com.levelup.lesson3.User.FIND_BY_LOGIN_QUERY;
-
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "KIND", length = 2, discriminatorType = DiscriminatorType.STRING)
